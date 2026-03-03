@@ -1,0 +1,45 @@
+
+
+### What does MAC stand for? ###
+- Media Access Control
+- Assigned to each Network Interface Card (NIC)
+- 48 Hexadecimal address for Layer 2 Communication
+
+### What is the format of a MAC? ###
+- 0 - 9 numerically and A-F alphabetically
+- 00-00-00-00-00-00
+- The first 24 bits / 3bytes contain the OUI.
+- The last 3 bytes are the devices unique identifier
+
+## What is an OUI? ##
+- An organizationally unique identifier
+- Specific numbers correlated to a manufacturer.
+
+### What are the 3 types of MAC Addresses? ###
+
+## Unicast ##
+- A MAC Address assinged to an interface
+- Allows computers to talk with each other inside the network
+- Different seperators are used, Colons(:) = Linux/Apple, Hyphens(-) = Windows, Periods(.) = Cisco.
+
+## Multicast ##
+- MAC Addresses used for applications or protocols sent from one host to many.
+- The first 3 bytes (24 bits) contain a prefix unique to that Multicast Address
+- Remaining 3 bytes (24 bits) are set by the application or the protocol.
+
+## Broadcast ## 
+- A special reserved address that represents all devices within the network
+- Used as the destination MAC Address for global broadcast.
+
+### What is the purpose of MAC Addresses? ###
+- LAN communication uses Layer 2 communication (MAC Addresses)
+- Switches reaching a host outside the network is Layer 3, but the switch to the device is Layer 2 / MAC Addresses
+
+
+#### SUMMARY ####
+- MAC stands for Media Access Control
+- Different types: Unicast, Multicast, Broadcast
+- MAC Addresses communicate at Layer 2
+- You can locate a MAC Address using ipconfig - ifconfig - ip addr - ip a
+
+
