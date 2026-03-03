@@ -1,0 +1,64 @@
+
+### What is an IP Address? ###
+- A unique address to identify a device connected to a computer network
+- What does IP stand for? Internet Protocol
+- IP is a set of rules for the format of data being sent via networks
+- Two versions of IP exist, IPv4 and IPv6.
+
+## What does an IP Look like? ##
+
+IPv4 Address: 192.168.1.1
+IPv6 Address: 2001:db8:85a3:0000:0000:8a2e:0370:7334
+
+### How IP Addresses formatted ### 
+- 32 Binary Digits 
+- 4 Octets seperated by periods
+- Octets can contain any number from 0-255
+- 255 is the larget number made from 8 Bits
+- First 3 Octets represent the network
+- Last Octet represents the host
+- IP Ranges are defined by the subnet mask
+
+## Bits, Bytes, and everything in between ##
+- 8 bits = 1 Byte
+= Binary is how computers communicate (0's and 1's)
+
+# Binary / Decimal Representation #
+128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
+
+- 0 = OFF
+- 1 = ON
+
+- Turning a bit on under these values 1 = 128 and then adding them together gives you your decimal value.
+  - All numbers set to on (1) then added together this equals 255.
+
+## How can we convert and IP Address to a Binary output? ##
+
+# STEP 1: Identify the target IP Address:
+ - 192.168.125.152
+
+# STEP 2: Identify if the largest number in our table can be subtracted from the first octet #
+ - 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
+ - our first number is 192, it can.
+
+# STEP 3: The Math
+- 192 - 128 = 64
+- 64 - 64 = 0
+
+# STEP 4: The Representation:
+128 | 64 | 32 | 16 | 8 | 4 | 2 | 1
+ 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 
+
+## Our output: 11000000 ##
+
+#### You then repeat this for all 4 octets ###
+- First Octet: 11000000
+- Second Octet: 10101000
+- Third Octet: 01111101
+- Fourth Octet: 10011000
+
+##### SUMMARY ####
+- Understand what an IP Address is
+- Understanding what it does
+- Binary and Decimal conversion
+- How to locate a host IP
