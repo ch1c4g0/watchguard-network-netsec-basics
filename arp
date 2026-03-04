@@ -1,0 +1,25 @@
+
+#### What does ARP stand for? ####
+
+- Address Resolution Protocol.
+
+#### What is the purpose of ARP? ####
+
+- To map MAC Addresses to IP Addresses for communication in Layer 2 switch networks.
+
+#### How are ARP Requests done? ####
+
+- Broadcasts to the whole network.
+    -i.e, 192.168.2.1 wants to communicate with 192.168.2.2 but doesn't know the IP it would send out a whole has tell xxx.xxx.xxx.xxx
+- Once a device finds the MAC Address for a new device it will store it in an ARP Cache.
+    - ARP Caches are on a timer and are not forever.
+
+### You can check your ARP Tables with the following commands ###
+
+- WINDOWS: arp -a
+- LINUX: arp
+
+#### SUMMARY ####
+- ARP Stands for Address Resolution Protocol
+- ARP is used to discover devices inside of a local network
+- ARP is used by sending out a broadcast asking for information to all devices on the LAN.
