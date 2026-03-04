@@ -1,0 +1,27 @@
+
+
+#### What are Routing Tables? ####
+
+- Specifications for how to locate resources on a network.
+
+#### What are the different types? ####
+
+### Three Different Types###
+TYPE 1: Static Routing: Sends packets through a manually created path to their destination
+TYPE 2: Default Routing: Sends all packets to the same hop unless a more specific route entry exists for a destination.
+TYPE 3: Dynamic Routing: Automatically adjusts routes, based on conditions advertised between routing devices.
+
+## EXAMPLES ##
+- RIP, OSPF, BGP, EIGRP are all examples of Dynamic Routing Protocols.
+
+#### Routing Table Entries ####
+
+- All routing tables will have a 0.0.0.0 address that points to a Gateway IP Address. 
+otherwise known as the default route.
+- Reminder, Private IP Addresses are not routeable to the internet.
+
+#### SUMMARY ####
+
+- Routing is a process deciding the path of traffic being sent between networks or via multiple networks by using routing tables.
+- Types of routing, Static, Defualt, and Dynamic.
+- Private IP Addresses are not routeable to the internet.
