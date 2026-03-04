@@ -1,0 +1,79 @@
+
+
+#### What is the purpose of subnetting? ####
+
+- A way of diving a network.
+
+#### How many Addresses are available in each Subnet? ###
+
+      (BLOCK SIZES = To the total amount of IP's)
+      
+Think of it like dividing a 256-square grid.
+      
+- /25
+  - 128 Total IP's
+- /26
+  - 64 Total IP's
+- /27
+  - 32 Total IP's
+- /28
+  - 16 Total IP's
+
+
+- With over 4.3 billion IPv4 Addresses we decided to class them to prevent from communication issues.
+     - This is where classes were created
+         - IP Classes define the size of the network and host portion
+    
+                  ### The Classes ###
+                  
+                  (Public / Private)
+                  
+          - Class A: 1.0.0.0 - 126.255.255.255
+              - Subnet: 255.0.0.0
+                  - Hosts per Subnet: 16,777,214
+                  
+          - Class B: 128.0.0.0 - 191.255.255.255
+              - Subnet: 255.255.0.0
+                  - Hosts: 65,534
+                  
+          - Class C: 192.0.0.0 - 223.255.255.255
+              - Subnet: 255.255.255.0
+                  - Hosts: 254
+                  
+          - Class D: 224.0.0.0 - 239.255.255.255
+              - These are Multicast Addresses
+              
+          - Class E: 240.0.0.0 - 254.255.255.254 
+              - These are Experimental Addresses
+
+
+#### Where did IPv6 Addresses come from? ####
+
+- A need to supply IP Addresses to devices as we ran out of IPv4 Addresses
+
+#### What is CIDR / CIDR Notation? ####
+
+- CIDR: Classless Inter-Domain Routing
+    - You can divide two /24 Subnets into to /25 Subnet
+        - You can also take one /25 Subnet with a /26 subnet inside and a /27 Subnets inside
+
+### How this works ###
+
+EX: /24 Subnet
+- A /24 has:
+    - 256 Total IPs
+    - 254 Usable IPs
+- You then split the /24 into two /25's and get:
+    - 128 Total IP's in each /25
+    - 126 Usable IP's in each /25
+
+#### SUMMARY ####
+
+- Subnetting is a way to divide networks
+- IP classes define the size of a network and host portion
+- IP classses have public and private networks
+- CIDR replaced the previous classful network addressing  - 
+
+
+
+
