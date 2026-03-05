@@ -1,0 +1,31 @@
+
+
+#### What are VLAN's? ####
+- Virtual Local Area Networks
+- Enables Virtual Seperation of Networks
+
+#### What are the benefits of VLAN's? ####
+- Helps control bandwidth usage when it comes to broadcasting in larger environments
+- Boosts security posture by separating networks
+
+#### What is an Access Port? ####
+- Default VLAN 1 (Access Ports)
+    - The device itself has no idea of any VLAN
+- Send and receive traffic within their own broadcast domain
+
+#### Using VLANs ####
+- Each port on a switch can be assigned a VLAN.
+    - They can be configured to connect / talk to each other, or not.
+
+#### What are Trunk Ports? ####
+- Ports that can send and receive traffic from different VLANs by using tags.
+    - 802.1q iee standard
+        - Tag Protocol Identifer - Used to identify the frame as 802.1q frame
+        - Tag Controller Information - Contains information on priority, format, and the VLAN ID
+
+#### SUMMARY ####
+- VLAN stands for Virtual Local area Network
+- VLAN 1 is the standard or default VLAN
+- You can configure from 2 to 4094 VLANs
+- Use access ports (untagged) to connect endpoint devices, such as computers.
+- Trunk ports carry multiple VLANs and tag them with VLAN IDs for differentiation
