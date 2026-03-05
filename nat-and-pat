@@ -1,0 +1,46 @@
+
+
+#### What is NAT? #### 
+- Network Address Translation
+
+#### What is PAT? ####
+- Port Address Translation
+
+### What does NAT do? ###
+- Translates IP addresses from one address to another
+    - Lack of IP Addresses resulted in the creation of Private IP Addresses 10.0.0.8/8 and 172.16.0.0/12 and 192.168.0.0./16
+        - This is defined in RFC1918 and these addresses can exist on every private network.
+            - LAN addresses cannot be routed to the internet, this is where NAT comes in.
+
+### What are the Types of NAT? ###
+
+TYPE 1: Dynamic NAT (DNAT)
+    - Dynamic NAT translates private IP Addresses to one external IP Address or a pool of External IP Addresses
+TYPE 2: Static NAT (SNAT)
+    - Statically assigns each Private IP Address to a Public IP Address
+        - Commonly seen to FTP / Mail Servers
+TYPE 3: Port Address Translation (PAT)
+    - Provides the ability to dynamically change the source port.
+        - It can also statically change the destination port.
+
+## Connections and relationship to NAT ##
+- The NAT device cannot use the same source port for connections to the same Public IP Address.
+    - This is where PAT comes in, it works by changing the port for one of the addresses on the public side.
+
+## How do NAT devices chose IP Addresses out of a Pool? ##
+- They chose one address out of the pool to dynamically map each connection to a Public IP Address
+    - PAT adds the option to change the port for the connection as well.
+        - The source port usually stays the same (It will be chosen on it's own.
+
+## What is a NAT Table? ##
+- A list to store connections mapped between to the internal source and destination IP's and Ports to the Public IP's and Ports.
+
+
+#### SUMMARY ####
+- NAT stands for Network Address Translation
+- Trasnlates IP Addresses from one network to another
+- Dynamic NAT, Static NAT, PAT.
+
+
+
+
