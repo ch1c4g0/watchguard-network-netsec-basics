@@ -1,0 +1,31 @@
+
+
+#### What is TCP? ####
+- TCP stands for Transmission Control Protocol.
+    - It is a reliable way to transmit over the network
+        - A 3-way handshake is involved known as a TCP Handshake.
+            - SYN
+            - ACK
+            - SYN/ACK
+- Connection is closed by FIN
+- Header size of 20-60 bytes
+
+#### How is TCP Reliable? ####
+- Uses Sequencing, Acknowledgments, and Checksums
+    - These are the fundamental roles within the handshake plays
+- Sequencing and acknowledgment with error checking and recovery
+    - Rearrangement of Segments.
+    - HTTP/HTTPs, SMTP, FTP
+
+#### What is UDP? ####
+- UDP Stands for User Datagram Protocol.
+    - It is a efficient way of transmitting data over the network. It focuses on speed over accuracy.
+        - There is no handshake for this protocol.
+            - Used in Gaming, Video Calls, Ect.
+- Header Size 8 Bytes
+- No Sequencing, Acknowledgment. There is basic error cehcking using checksums.
+
+#### SUMMARY ####
+TCP (Transmission Control Protocol) is a reliable, connection-based network protocol that establishes communication using a 3-way handshake (SYN, SYN/ACK, ACK), uses sequencing, acknowledgments, and checksums to ensure data arrives correctly (including reordering and recovery), and closes connections with FIN. Its header is 20–60 bytes, and it’s commonly used by services like HTTP/HTTPS, SMTP, and FTP.
+
+UDP (User Datagram Protocol) is a faster, efficiency-focused protocol that does not use a handshake and prioritizes speed over guaranteed delivery. It has an 8-byte header, lacks sequencing and acknowledgments, and relies mainly on basic checksum error checking, making it useful for gaming and video calls where low latency matters more than perfect reliability.
